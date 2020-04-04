@@ -11,5 +11,5 @@ docker build -t react-nginx .
 # Start a Container
 
 ```bash
-docker run -rm -it -p 8080:80 react-nginx
+docker run --rm -it -p 8080:80 react-nginx
 ```

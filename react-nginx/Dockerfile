@@ -11,8 +11,6 @@ RUN cd /usr/app && yarn install && yarn build
 
 # nginx state for serving content
 FROM nginx:alpine
-# Copy nginx config into config directory
-COPY nginx.conf /etc/nginx/nginx.conf
 # Remove default nginx static assets
 RUN rm -rf /usr/share/nginx/html/*
 # Copy static assets from builder stage
