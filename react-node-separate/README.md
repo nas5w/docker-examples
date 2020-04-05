@@ -6,4 +6,4 @@
 docker-compose up --build
 ```
 
-Front-end served on port 3000, backend on port 3001
+Front-end served on port 80, backend on port 3001

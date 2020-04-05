@@ -10,7 +10,7 @@ services:
       - /app/node_modules
       - ./client:/app
     ports:
-      - "3000:80"
+      - "80:80"
     restart: on-failure
     container_name: app
   api:
@@ -26,4 +26,4 @@ services:
       - ./server:/app
     environment:
       - NODE_SERVER_PORT=3001
-      - APP_URL=http://localhost:3000
+      - APP_URL=http://localhost
