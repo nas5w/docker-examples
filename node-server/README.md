@@ -13,11 +13,11 @@ docker build -t node-server .
 
 ## Run a Container
 
-- `-rm` to cleanup old instances
+- `--rm` to cleanup old instances
 - `-it` flags for terminal behavior
 - Expose container port `3000` on port `3000`
 - Run the `node-server` image
 
 ```bash
-docker run -rm -it -p 3000:3000 node-server
+docker run --rm -it -p 3000:3000 node-server
 ```
